@@ -1,3 +1,4 @@
+/* --------- Global styles --------- */
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +53,7 @@ body {
   font-size: 0.95rem;
   letter-spacing: 0.5px;
   position: relative;
+  transition: color 0.2s ease;
 }
 
 .menu ul li a::after {
@@ -67,6 +69,11 @@ body {
 
 .menu ul li a:hover::after {
   width: 100%;
+}
+
+/* active nav link */
+.Menunav a.active {
+  color: #fb923c;
 }
 
 /* search */
@@ -101,7 +108,7 @@ body {
   cursor: pointer;
 }
 
-/* --------- Main hero section --------- */
+/* --------- Main hero section (HOME) --------- */
 .main {
   width: 100%;
   padding: 60px 16px;
@@ -170,7 +177,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* --------- Login Card (right side) --------- */
+/* --------- Login Card (right side on home) --------- */
 .login-wrapper {
   flex: 0 0 340px;
   display: flex;
@@ -363,6 +370,97 @@ body {
   color: #9ca3af;
 }
 
+/* ---------- Extra styles for inner pages (About, Services, Design, Contact) ---------- */
+
+.page-main {
+  width: 100%;
+  padding: 60px 16px;
+  background: radial-gradient(circle at top, #0b1220, #020617);
+}
+
+.page-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 60vh;
+  padding: 10px 0 30px;
+}
+
+.page-title {
+  font-size: 2.3rem;
+  margin-bottom: 16px;
+  color: #f9fafb;
+}
+
+.page-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #e5e7eb;
+}
+
+/* cards for services / design / highlights */
+.card-grid,
+.highlight-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.card,
+.highlight-card {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 16px;
+  padding: 16px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card h3,
+.highlight-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #fb923c;
+}
+
+.card p,
+.highlight-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* contact page layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  max-width: 520px;
+}
+
+.contact-form {
+  background: rgba(15, 23, 42, 0.98);
+  border-radius: 18px;
+  padding: 20px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* reuse .field; add textarea style */
+.contact-form .field textarea {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #4b5563;
+  background: rgba(15, 23, 42, 0.9);
+  color: #f9fafb;
+  padding: 9px 11px;
+  outline: none;
+  resize: vertical;
+}
+
 /* --------- Responsive styles --------- */
 
 /* <= 992px: stack hero content, full-width form */
@@ -374,6 +472,14 @@ body {
 
   .login-wrapper {
     align-self: stretch;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    max-width: 520px;
   }
 }
 
@@ -425,6 +531,10 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
+  .page-main {
+    padding: 40px 12px;
+  }
 }
 
 /* <= 480px: very small phones */
@@ -444,6 +554,12 @@ body {
   .form {
     padding-inline: 18px;
   }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .page-text {
+    font-size: 0.9rem;
+  }
 }
-
-
