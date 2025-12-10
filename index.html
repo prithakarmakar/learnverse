@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpage Design</title>
-    <link rel="stylesheet" href="syte.css">
+    <link rel="stylesheet" href="syte.css" />
 </head>
+
 <body>
-    <div class="main">
+    <!-- HEADER -->
+    <header class="header">
         <div class="navbar">
             <div class="icon">
                 <h2 class="logo">LearnVerse</h2>
             </div>
 
             <div class="menu">
-                <ul>
+                <ul class="Menunav">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">SERVICE</a></li>
@@ -24,86 +27,109 @@
             </div>
 
             <div class="search">
-                <input class="srch" type="search" placeholder="Type to text">
+                <input class="srch" type="search" placeholder="Type to text" />
                 <button class="btn">Search</button>
             </div>
         </div>
+    </header>
 
-        
+    <!-- HERO SECTION -->
+    <div class="main">
         <div class="content">
-            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
-            <p class="par">
-                <b>come to a world of learning designed just for you!</b><br>
-                Explore new skills, discover your strengths, and learn at your own pace.<br>
-                With simple lessons, clear explanations, and real examples, learning becomes fun and meaningful.<br>
-                Start your journey today and unlock endless opportunities for your future.
-            </p>
+            <!-- LEFT SIDE -->
+            <div class="hero-left">
+                <h1>
+                    Web Design & <br />
+                    <span>Development</span> <br />
+                    Course
+                </h1>
 
-            <button class="cn"><a href="#">JOIN US</a></button>
+                <p class="par">
+                    <b>come to a world of learning designed just for you!</b><br />
+                    Explore new skills, discover your strengths, and learn at your own pace.<br />
+                    With simple lessons, clear explanations, and real examples, learning
+                    becomes fun and meaningful.<br />
+                    Start your journey today and unlock endless opportunities for your future.
+                </p>
 
-            <div class="form">
-                <h2>Login Here</h2>
-                <input type="email" name="email"  placeholder="Enter Email Here">
-                <input type="password" name=""  placeholder="Enter password Here">
-                <button class="btn"><a href="#">Login</a></button>
-
-                <p class="link">Don't have an account<br>
-                <a href="#">Sign up </a> Here </p>
-                
-                <p class="liw">Log in with</p>
-
-                
-                <div class="icon">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                </div>
-
+                <button class="join-btn">
+                    <a href="#">JOIN US</a>
+                </button>
             </div>
 
+            <!-- RIGHT SIDE LOGIN FORM -->
+            <div class="login-wrapper">
+                <form class="form">
+                    <h2>Login Here</h2>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Enter email here" />
+                    </div>
+
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" placeholder="Enter password here" />
+                    </div>
+
+                    <button type="submit" class="btnn">Login</button>
+
+                    <p class="link">
+                        Don't have an account?
+                        <a href="#">Sign up</a>
+                    </p>
+
+                    <p class="liw">Or log in with</p>
+
+                    <div class="social-icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer">
-    <div class="footer-container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-col">
-            <h3>Follow Us</h3>
-            <ul><li><a href="#">Facebook</a></li></ul>
-            <ul><li><a href="#">Twitter</a></li></ul>
-            <ul><li><a href="#">Instagram</a></li>
-            <ul><li><a href="#">Youtube</a></li></ul>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Venue</h3>
+                <p>200, D-block, Green Lane USA</p>
+                <p>odumark@contact.com</p>
+                <p>+10 367 467 8934</p>
+            </div>
         </div>
 
-        <div class="footer-col">
-            <h3>Links</h3>
-            <ul>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Speakers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>Copyright ©️2019 All rights reserved | This template is made with ♡ by Colorlib</p>
         </div>
+    </footer>
 
-        <div class="footer-col">
-            <h3>Venue</h3>
-            <p>200, D-block, Green Lane USA</p>
-            <p>odumark@contact.com</p>
-            <p>+10 367 467 8934</p>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>Copyright ©️2019 All rights reserved | This template is made with ♡ by Colorlib</p>
-    </div>
-</footer>
-
-            
-
-    
+    <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
+
 </html>
